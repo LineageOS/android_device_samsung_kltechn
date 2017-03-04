@@ -54,17 +54,17 @@ void init_target_properties()
 
     if (bootloader.find("G9006V") == 0) {
         /* kltezn */
-        property_set("ro.build.fingerprint", "samsung/kltezn/kltezn:5.0/LRX21T/G9006VZNU1BOC2:user/release-keys");
-        property_set("ro.build.description", "kltezn-user 5.0 LRX21T G9006VZNU1BOC2 release-keys");
+        property_set("ro.build.fingerprint", "samsung/kltezn/klte:6.0.1/MMB29M/G9006VZNU1CPJ2:user/release-keys");
+        property_set("ro.build.description", "kltezn-user 6.0.1 MMB29M G9006VZNU1CPJ2 release-keys");
         property_set("ro.product.model", "SM-G9006V");
-        property_set("ro.product.device", "kltezn");
+        property_set("ro.product.device", "klte");
         gsm_properties("9");
     } else if (bootloader.find("G9008V") == 0) {
         /* kltezm */
-        property_set("ro.build.fingerprint", "samsung/kltezm/kltezm:5.0/LRX21T/G9008VZMU1BOC2:user/release-keys");
-        property_set("ro.build.description", "kltezm-user 5.0 LRX21T G9008VZMU1BOC2 release-keys");
+        property_set("ro.build.fingerprint", "samsung/kltezm/klte:6.0.1/MMB29M/G9008VZMU1CQA1:user/release-keys");
+        property_set("ro.build.description", "kltezm-user 6.0.1 MMB29M G9008VZMU1CQA1 release-keys");
         property_set("ro.product.model", "SM-G9008V");
-        property_set("ro.product.device", "kltezm");
+        property_set("ro.product.device", "klte");
         gsm_properties("9");
     } 
 

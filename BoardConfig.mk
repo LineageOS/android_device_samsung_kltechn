@@ -1,4 +1,5 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2014-2016 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +19,7 @@
 TARGET_OTA_ASSERT_DEVICE := klte,kltexx,kltezn,kltezm
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8974pro_sec_klte_chn_defconfig
+TARGET_KERNEL_CONFIG := lineage_kltechn_defconfig
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8974

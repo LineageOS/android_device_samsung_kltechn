@@ -1,5 +1,5 @@
 # Copyright (C) 2014-2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,12 +14,15 @@
 # limitations under the License.
 
 # inherit from common kltechn
--include device/samsung/klte-common/BoardConfigCommon.mk
+include device/samsung/klte-common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := klte,kltexx,kltezn,kltezm
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_kltechn_defconfig
+
+# Fingerprint
+include $(COMMON_PATH)/fingerprint/board.mk
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8974

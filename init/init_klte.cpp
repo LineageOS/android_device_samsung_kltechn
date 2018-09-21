@@ -54,14 +54,14 @@ void init_target_properties()
         /* kltezn */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/kltezn/klte:6.0.1/MMB29M/G9006VZNU1CQB1:user/release-keys");
         property_override("ro.build.description", "kltezn-user 6.0.1 MMB29M G9006VZNU1CQB1 release-keys");
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-G9006V");
-        property_override_dual("ro.product.device", "ro.vendor.product.device", "klte");
+        property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-G9006V");
+        property_override_dual("ro.product.device", "ro.product.vendor.device", "klte");
     } else if (bootloader.find("G9008V") == 0) {
         /* kltezm */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/kltezm/klte:6.0.1/MMB29M/G9008VZMU1CQA1:user/release-keys");
         property_override("ro.build.description", "kltezm-user 6.0.1 MMB29M G9008VZMU1CQA1 release-keys");
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-G9008V");
-        property_override_dual("ro.product.device", "ro.vendor.product.device", "klte");
+        property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-G9008V");
+        property_override_dual("ro.product.device", "ro.product.vendor.device", "klte");
     } 
 
     std::string device = GetProperty("ro.product.device", "");

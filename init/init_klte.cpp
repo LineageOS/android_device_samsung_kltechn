@@ -1,6 +1,6 @@
 /*
    Copyright (c) 2013, The Linux Foundation. All rights reserved.
-   Copyright (c) 2017-2018, The LineageOS Project. All rights reserved.
+   Copyright (c) 2017-2020, The LineageOS Project. All rights reserved.
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -42,12 +42,6 @@
 using android::base::GetProperty;
 using android::init::property_set;
 
-void gsm_properties(char const default_network[])
-{
-    property_set("telephony.lteOnGsmDevice", "1");
-    property_set("ro.telephony.default_network", default_network);
-}
-
 void init_target_properties()
 {
     std::string platform = GetProperty("ro.board.platform", "");
@@ -62,14 +56,12 @@ void init_target_properties()
         property_override("ro.build.description", "kltezn-user 6.0.1 MMB29M G9006VZNU1CQB1 release-keys");
         property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-G9006V");
         property_override_dual("ro.product.device", "ro.vendor.product.device", "klte");
-        gsm_properties("9");
     } else if (bootloader.find("G9008V") == 0) {
         /* kltezm */
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/kltezm/klte:6.0.1/MMB29M/G9008VZMU1CQA1:user/release-keys");
         property_override("ro.build.description", "kltezm-user 6.0.1 MMB29M G9008VZMU1CQA1 release-keys");
         property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-G9008V");
         property_override_dual("ro.product.device", "ro.vendor.product.device", "klte");
-        gsm_properties("9");
     } 
 
     std::string device = GetProperty("ro.product.device", "");

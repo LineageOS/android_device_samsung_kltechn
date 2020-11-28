@@ -1,2 +1,2 @@
 # Radio - Pinned to haxxed G9008VZMU1CQA1_G9008VCHM1CQA1_CHM
-lib/libsec-ril.so:vendor/lib/libsec-ril.so|be523835a18ecb6fc8d29ba8f4b365a00a375bc9
+lib/libsec-ril.so:vendor/lib/libsec-ril.so|3df3411728adfb99e581a3ef119c592a02474b61
